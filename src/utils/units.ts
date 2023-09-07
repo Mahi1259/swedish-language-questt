@@ -4,7 +4,6 @@ export type Unit = {
   backgroundColor: `bg-${string}`;
   textColor: `text-${string}`;
   borderColor: `border-${string}`;
-  imageSrc: string;
   tiles: Tile[];
 };
 
@@ -24,7 +23,6 @@ export const units: readonly Unit[] = [
     description: "Basic Phrases",
     backgroundColor: "bg-gray-400",
     textColor: "text-[#58cc02]",
-    imageSrc: "/bee.gif",
     borderColor: "border-gray-500", // Set border color to black
     tiles: [
       {
@@ -38,7 +36,6 @@ export const units: readonly Unit[] = [
     unitNumber: 2,
     description: "Food and Drinks",
     backgroundColor: "bg-gray-400",
-    imageSrc: "/apple.gif",
     textColor: "text-[#ce82ff]",
     borderColor: "border-gray-500", // Set border color to black
     tiles: [
@@ -49,7 +46,6 @@ export const units: readonly Unit[] = [
     unitNumber: 3,
     description: "Travel and Directions",
     backgroundColor: "bg-gray-400",
-    imageSrc: "/biking.gif",
     textColor: "text-[#00cd9c]",
     borderColor: "border-gray-500", // Set border color to black
     tiles: [
@@ -60,7 +56,6 @@ export const units: readonly Unit[] = [
     unitNumber: 4,
     description: "Everyday Activities",
     backgroundColor: "bg-gray-400",
-    imageSrc: "/housekeeper.gif",
     textColor: "text-[#00cd9c]",
     borderColor: "border-gray-500", // Set border color to black
     tiles: [
