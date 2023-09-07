@@ -626,7 +626,7 @@ const UnitHeader = ({
         " "
       )}
     >
-      <header className="flex-col items-center gap-4 rounded-2xl border-2 border-b-4 bg-gray-400 bg-opacity-70 border-gray-500 py-4 px-5 text-1xl font-bold">
+      <header className="flex-col items-center gap-4 rounded-2xl border-2 border-b-4 bg-gray-400 bg-opacity-70 border-gray-500 py-9 px-5 text-1xl font-bold">
         <div className="flex flex-col gap-1">
           <h2 className="text-2xl font-bold">Unit {unitNumber}</h2>
           <p className="text-lg">{description}</p>
