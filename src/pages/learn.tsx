@@ -335,7 +335,6 @@ const UnitSection = ({ unit }: { unit: Unit }): JSX.Element => {
         description={unit.description}
         backgroundColor={unit.backgroundColor}
         borderColor={unit.borderColor}
-        imageSrc={unit.imageSrc}
       />
       <div className="relative mt-[67px] mb-8 flex max-w-2xl flex-col items-center gap-4">
         {unit.tiles.map((tile, i): JSX.Element => {
