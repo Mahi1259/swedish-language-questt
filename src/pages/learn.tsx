@@ -613,14 +613,12 @@ const UnitHeader = ({
   description,
   backgroundColor,
   borderColor,
-  imageSrc,
 
 }: {
   unitNumber: number;
   description: string;
   backgroundColor: `bg-${string}`;
   borderColor: `border-${string}`;
-  imageSrc: string;
 }) => {
   const language = useBoundStore((x) => x.language);
   return (
@@ -634,7 +632,6 @@ const UnitHeader = ({
           <h2 className="text-2xl font-bold">Unit {unitNumber}</h2>
           <p className="text-lg">{description}</p>
           <div style={{marginLeft:'550px',marginTop:'-60px'}} >
-          <Image src={imageSrc} width="60" height="40" alt={""} />
           </div>
         </div>
         <Link
