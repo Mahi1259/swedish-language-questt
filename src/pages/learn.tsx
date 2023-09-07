@@ -630,7 +630,7 @@ const UnitHeader = ({
         <div className="flex flex-col gap-1">
           <h2 className="text-2xl font-bold">Unit {unitNumber}</h2>
           <p className="text-lg">{description}</p>
-          <div style={{marginLeft:'550px',marginTop:'-60px'}} >
+          <div style={{marginLeft:'250px',marginTop:'-60px'}} >
           </div>
         </div>
         <Link
