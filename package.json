@@ -1,0 +1,51 @@
+{
+  "name": "swedish-language-quest",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "lint": "next lint",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@t3-oss/env-nextjs": "^0.2.1",
+    "@types/lodash": "^4.14.195",
+    "dayjs": "^1.11.7",
+    "howler": "^2.2.3",
+    "lodash": "^4.17.21",
+    "next": "^13.4.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-router-dom": "^6.14.2",
+    "sharp": "^0.32.3",
+    "use-sound": "^4.0.1",
+    "zod": "^3.21.4",
+    "zustand": "^4.3.8"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.21.3",
+    "@types/howler": "^2.2.7",
+    "@types/node": "^18.15.5",
+    "@types/prettier": "^2.7.2",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.56.0",
+    "@zeit/next-css": "^1.0.1",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.36.0",
+    "eslint-config-next": "^13.4.1",
+    "file-loader": "^6.2.0",
+    "next-compose": "^0.0.2",
+    "postcss": "^8.4.21",
+    "prettier": "^2.8.6",
+    "prettier-plugin-tailwindcss": "^0.2.6",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5.0.2",
+    "url-loader": "^4.1.1"
+  },
+  "ct3aMetadata": {
+    "initVersion": "7.13.0"
+  }
+}
