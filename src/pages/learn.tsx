@@ -613,6 +613,7 @@ const UnitHeader = ({
   backgroundColor,
   borderColor,
 
+
 }: {
   unitNumber: number;
   description: string;
@@ -626,16 +627,17 @@ const UnitHeader = ({
         " "
       )}
     >
-      <header className={`flex flex-col items-center gap-4 rounded-2xl ${borderColor} py-2 px-5 text-1xl font-bold`}>
+      <header className="flex-col items-center gap-4 rounded-2xl border-2 border-b-4 bg-gray-400 bg-opacity-70 border-gray-500 py-2 px-5 text-1xl font-bold">
         <div className="flex flex-col gap-1">
           <h2 className="text-2xl font-bold">Unit {unitNumber}</h2>
           <p className="text-lg">{description}</p>
-          <div style={{marginLeft:'550px',marginTop:'-60px'}} >
-          </div>
         </div>
         <Link
           href={`${language.code}/${unitNumber}`}
-          className={`lg:not-sr-only ${borderColor}`}
+          className={[
+            "",
+            borderColor,
+          ].join(" ")}
         >
           <span className="sr-only font-bold uppercase lg:not-sr-only">
           </span>
