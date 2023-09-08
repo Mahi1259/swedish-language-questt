@@ -336,7 +336,7 @@ const UnitSection = ({ unit }: { unit: Unit }): JSX.Element => {
         backgroundColor={unit.backgroundColor}
         borderColor={unit.borderColor}
       />
-      <div className="relative mt-[67px] mb-8 flex max-w-2xl flex-col items-center gap-4">
+      <div className="relative mt-[120px] mb-8 flex max-w-2xl flex-col items-center gap-4">
         {unit.tiles.map((tile, i): JSX.Element => {
           const status = tileStatus(tile, lessonsCompleted);
           return (
@@ -626,9 +626,10 @@ const UnitHeader = ({
         " "
       )}
     >
-      <header className="flex-col items-center justify-center rounded-2xl border-2 border-gray-500 bg-gray-400 bg-opacity-70 py-4 px-8 text-lg font-bold">
-        <div className="flex flex-col gap-9">
+      <header className="flex-col items-center gap-4 rounded-2xl border-2 border-b-4 bg-gray-400 bg-opacity-70 border-gray-500 py-2 px-5 text-1xl font-bold">
+        <div className="flex flex-col gap-1">
           <h2 className="text-2xl font-bold">Unit {unitNumber}</h2>
+           <p className="text-lg">{description}</p>
           <div style={{marginLeft:'550px',marginTop:'-60px'}} >
           </div>
         </div>
