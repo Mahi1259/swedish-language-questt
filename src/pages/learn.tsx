@@ -336,7 +336,7 @@ const UnitSection = ({ unit }: { unit: Unit }): JSX.Element => {
         backgroundColor={unit.backgroundColor}
         borderColor={unit.borderColor}
       />
-      <div className="relative mt-[120px] mb-8 flex max-w-2xl flex-col items-center gap-4">
+      <div className="relative mt-[67px] mb-8 flex max-w-2xl flex-col items-center gap-4">
         {unit.tiles.map((tile, i): JSX.Element => {
           const status = tileStatus(tile, lessonsCompleted);
           return (
@@ -612,12 +612,14 @@ const UnitHeader = ({
   description,
   backgroundColor,
   borderColor,
+  imageSrc,
 
 }: {
   unitNumber: number;
   description: string;
   backgroundColor: `bg-${string}`;
   borderColor: `border-${string}`;
+  imageSrc: string;
 }) => {
   const language = useBoundStore((x) => x.language);
   return (
@@ -626,19 +628,17 @@ const UnitHeader = ({
         " "
       )}
     >
-      <header className="flex-col items-center gap-4 rounded-2xl border-2 border-b-4 bg-gray-400 bg-opacity-70 border-gray-500 py-2 px-5 text-1xl font-bold">
+      <header className={`flex flex-col items-center gap-4 rounded-2xl ${borderColor} py-2 px-5 text-1xl font-bold`}>
         <div className="flex flex-col gap-1">
           <h2 className="text-2xl font-bold">Unit {unitNumber}</h2>
-           <p className="text-lg">{description}</p>
+          <p className="text-lg">{description}</p>
           <div style={{marginLeft:'550px',marginTop:'-60px'}} >
+          <Image src={imageSrc} width="60" height="40" alt={""} />
           </div>
         </div>
         <Link
           href={`${language.code}/${unitNumber}`}
-          className={[
-            "",
-            borderColor,
-          ].join(" ")}
+          className={`lg:not-sr-only ${borderColor}`}
         >
           <span className="sr-only font-bold uppercase lg:not-sr-only">
           </span>
