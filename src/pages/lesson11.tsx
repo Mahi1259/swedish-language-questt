@@ -4990,7 +4990,7 @@ const ReviewLesson = ({
           <BigCloseSvg className="h-8 w-8" />
           <span className="sr-only">Close</span>
         </button>
-        <h2 className="text-center text-3xl">Check out your scorecard!</h2>
+        <h2 className="text-center text-3xl">Review your answers!</h2>
         <p className="text-center text-xl text-gray-400">
           Click the tiles below to reveal the solutions
         </p>
