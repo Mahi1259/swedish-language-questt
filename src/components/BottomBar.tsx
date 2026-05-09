@@ -2,7 +2,6 @@ import Link from "next/link";
 import { useBoundStore } from "../hooks/useBoundStore";
 import bookk from 'public/wired-lineal-112-book-morph.gif'
 import Image from "next/image";
-import prof from '/Users/mahidharreddyvaka/Desktop/swedish-language-quest/public/wired.gif'
 import exi from 'public/exitsign.gif'
 import survey from 'public/survey1.gif'
 
