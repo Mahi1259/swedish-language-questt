@@ -40,7 +40,7 @@ import { units } from "../utils/units";
 type TileStatus = "LOCKED" | "ACTIVE" | "COMPLETE";
 
 const tileStatus = (tile: Tile, lessonsCompleted: number): TileStatus => {
-  const lessonsPerTile = 4;
+  const lessonsPerTile = 1;
   const tilesCompleted = Math.floor(lessonsCompleted / lessonsPerTile);
   const tiles = units.flatMap((unit) => unit.tiles);
   const tileIndex = tiles.findIndex((t) => t === tile);

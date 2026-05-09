@@ -23,7 +23,7 @@ const Register: NextPage = () => {
 
   // Function to handle the Google button click and redirect to Google page
   const handleGoogleButtonClick = () => {
-    window.location.href = "/swedish-language-questt/disclaimernon";
+    window.location.href = "/nongamifieddisclaimer";
   };
 
   // Shuffle the languages array to randomize the order of language buttons

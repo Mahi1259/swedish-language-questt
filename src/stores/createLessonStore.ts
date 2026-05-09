@@ -15,7 +15,7 @@ export const createLessonSlice: BoundStateCreator<LessonSlice> = (set) => ({
     })),
   jumpToUnit: (unitNumber: number) =>
     set(({ lessonsCompleted }) => {
-      const lessonsPerTile = 4;
+      const lessonsPerTile = 1;
       const totalLessonsToJumpToUnit = units
         .filter((unit) => unit.unitNumber < unitNumber)
         .map((unit) => unit.tiles.length * lessonsPerTile)
